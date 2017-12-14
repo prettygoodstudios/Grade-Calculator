@@ -9,6 +9,14 @@
   padding: 30px;
   margin-bottom: 30px;
 }
+.App{
+  padding: 0px;
+  margin: 0px;
+}
+.App-title{
+  margin: 0px;
+  padding: 50px;
+}
 .App-header{
   background-color: black;
   color: white;
