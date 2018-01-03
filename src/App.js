@@ -472,9 +472,15 @@ const Footer = (props) => {
   );
 };
 class App extends Component {
+  componentDidMount = () => {
+    document.title = "Grade Calculator";
+  }
   render() {
     return (
       <div className="App">
+        <head>
+          <title>Grade Calculator</title>
+        </head>
         <div className="App-header">
           <h1 className="App-title"><FontAwesomeIcon icon={faBook} /> Grade Calculator</h1>
         </div>
