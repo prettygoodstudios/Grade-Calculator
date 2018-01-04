@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faTrash, faPlus, faBook, faRetweet, faEdit } from '@fortawesome/fontawesome-free-solid'
+import { faTrash, faPlus, faBook, faRetweet, faEdit} from '@fortawesome/fontawesome-free-solid'
 class Grade extends Component {
   state = {
     categories: [],
@@ -464,6 +464,7 @@ const Footer = (props) => {
       <div className="footer-left">
         <p>Made by {props.contributor}</p>
         <a href={props.portfolio}>View More Of My Projects</a>
+        <a href="https://github.com/prettygoodstudios/Grade-Calculator" style={{margin: "16px 0px 0px 0px", display: "block"}}>Contribute On Github</a>
       </div>
       <div className="footer-right">
         <h1><FontAwesomeIcon icon={faBook} /> {props.title}</h1>
@@ -474,6 +475,7 @@ const Footer = (props) => {
 class App extends Component {
   componentDidMount = () => {
     document.title = "Grade Calculator";
+
   }
   render() {
     return (
